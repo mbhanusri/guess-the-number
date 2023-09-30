@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?w=996&t=st=1696074560~exp=1696075160~hmac=0a9e700d479106301fb760ec0070232dc4a2af990ecae49a1192e5cf862f3875);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 30px;
+            background-color: #f5f5f5; /* Light gray background */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .login-container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+            animation: slideInLeft 1s ease-in-out;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #be079a; /* Green color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #be079a; /* Darker green on hover */
+        }
+
+        /* Additional CSS and animations */
+        .login-container p {
+            color: #777; /* Gray text color */
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Signup</h1>
+        <form action="/signupSubmit" method="get">
+            <label for="email">Username</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password">
+            <br>
+            <button type="submit">Sign Up</button><br>
+            <p>Already have an account? <a href="login.html" style="color: #4CAF50;">Login</a></p>
+        </form>
+    </div>
+</body>
+<script src="ser.js"></script>
+</html>
